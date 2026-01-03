@@ -61,7 +61,7 @@ The live demo allows you to :
 - read, edit, and delete notes visually
 - see how the logic translates into a web interface
 
-🌐 [live demo](https:website.com/)
+🌐 [live demo](https://node-notes-7jl5.onrender.com)
 
 ⋆˚✐ 𓂃𖦹.˚ ༘ ⊹
 
