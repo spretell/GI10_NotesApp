@@ -1,0 +1,25 @@
+{
+  "name": "node-notes",
+  "version": "1.0.0",
+  "description": "node notes is a simple CLI notes app built with Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "notes",
+    "cli",
+    "express",
+    "beginner"
+  ],
+  "author": "stephanie pretell",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "express": "^5.2.1",
+    "yargs": "^17.7.2"
+  }
+}

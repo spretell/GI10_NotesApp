@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>node notes ✎ᝰ.ᐟ</title>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="brand">
+          <!-- header title -->
+          <h1>node notes ✎ᝰ.ᐟ</h1>
+          <p>
+            type a command like you would in the terminal , and i’ll run it for
+            you !
+          </p>
+        </div>
+        <div class="badge">powered by node + express</div>
+      </div>
+
+      <div class="main">
+        <section class="panel">
+          <h2>chalk terminal</h2>
+
+          <!-- chalk terminal output -->
+          <div id="terminal" class="terminal" aria-live="polite"></div>
+
+          <div class="prompt">
+            <input
+              id="commandInput"
+              type="text"
+              placeholder='try: add --title="ideas" --body="build cute node app"'
+              autocomplete="off"
+            />
+            <button id="runBtn">run</button>
+          </div>
+
+          <!-- tips -->
+          <p class="dim">꩜ type <code>clear</code> to wipe the chalkboard</p>
+
+          <p class="dim" style="margin: 10px 2px 0">
+            ꩜ press <kbd>enter</kbd> to run
+          </p>
+        </section>
+
+        <aside class="panel">
+          <h2>quick commands</h2>
+          <!-- quick commands list -->
+          <div class="help">
+            <div>
+              <span class="chalk-green">add</span>
+              <span class="dim">--title="..." --body="..."</span>
+            </div>
+            <div><span class="chalk-blue">list</span></div>
+            <div>
+              <span class="chalk-purple">read</span>
+              <span class="dim">--title="..."</span>
+            </div>
+            <div>
+              <span class="chalk-yellow">edit</span>
+              <span class="dim">--title="..." --body="..."</span>
+            </div>
+            <div>
+              <span class="chalk-red">remove</span>
+              <span class="dim">--title="..."</span>
+            </div>
+            <div><span class="chalk-red">remove-all</span></div>
+            <div class="dim">
+              example: <span class="chalk-blue">read</span> --title="ideas"
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- user's notes -->
+    <section class="panel">
+      <h2>your notes</h2>
+      <ul id="notesList" class="notes"></ul>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="https://github.com/spretell" target="_blank" rel="noopener">
+          github
+        </a>
+        <a
+          href="https://www.linkedin.com/in/stephaniepretell/"
+          target="_blank"
+          rel="noopener"
+        >
+          linkedin
+        </a>
+      </div>
+
+      <div class="footer-center">© <span id="year"></span> node notes ✎ᝰ.ᐟ</div>
+
+      <div class="footer-right">
+        <a href="https://nodejs.org/en/docs" target="_blank" rel="noopener">
+          node docs
+        </a>
+        <a href="https://expressjs.com/" target="_blank" rel="noopener">
+          express
+        </a>
+        <a
+          href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
+          target="_blank"
+          rel="noopener"
+        >
+          andrew mead
+        </a>
+      </div>
+    </footer>
+
+    <!-- script link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
