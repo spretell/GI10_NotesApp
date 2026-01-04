@@ -94,6 +94,16 @@ function runCommand() {
       // if the server sent back notes, update the list
       if (data.notes) {
         renderNotes(data.notes);
+        // if the user typed "list" , also print titles in the terminal
+        if (input.toLowerCase() === "list") {
+          if (data.notes.length === 0) {
+            printLine("no notes yet ˙ᵕ˙", "chalk-yellow");
+          } else {
+            data.notes.forEach((note) => {
+              printLine(`- ${note.title}`, "chalk-blue");
+            });
+          }
+        }
       } else {
         // otherwise, just refresh the notes list from the server
         refreshNotes();
